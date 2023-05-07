@@ -5,11 +5,11 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "",
-    "start": "",
+    "start": "cd ./server && npm start",
     "server": "",
-    "build": "",
+    "build": "cd ./client && npm run build",
     "install": "",
-    "client": ""
+    "client": "concurrently \"cd ./server && npm i\" \"cd ./client && npm i\""
   },
   "keywords": [],
   "author": "",

@@ -28,13 +28,28 @@ module.exports = () => {
       
      
       new WebpackPwaManifest({
-        // TODO: Create a manifest.json:
+        name: 'Text Editor - Module 19',
+    short_name: 'txt_edit',
+    description: 'Just another text editor',
+    background_color: '#ffffff',
+    theme_color: '#fff',
+    start_url: '.',
+    publicPath: '/',
+    inject: true,
+    
+    icons: [
+      {
+        src: path.resolve('src/images/logo.png'),
+        sizes: [96, 128, 192, 256, 384, 512],
+        destination: path.join('assets', 'icons'),
+      }
+    ]
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'service-worker.js',
       }), 
-      // new WorkboxPlugin.GenerateSW()
+     
     ],
     module: {
       rules: [
