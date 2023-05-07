@@ -11,4 +11,4 @@ Just visit the app [here](https://evening-everglades-03167.herokuapp.com) Don't 
 ## Usage
 Write some notes, code, whatever - it will automatically save whatever you've written so it will persist the next time you launch the app. Click install to download the app to your desktop and use it outside the browser
 
-![JATE](assets/screenshot.png)
+![JATE](Assets/screenshot.png)
