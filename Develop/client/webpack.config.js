@@ -28,9 +28,9 @@ module.exports = () => {
       
      
       new WebpackPwaManifest({
-        name: 'Text Editor - Module 19',
-    short_name: 'txt_edit',
-    description: 'Just another text editor',
+        name: 'CodePad',
+    short_name: 'CodePad',
+    description: 'A text editor for web developers',
     background_color: '#ffffff',
     theme_color: '#fff',
     start_url: '.',
@@ -40,7 +40,7 @@ module.exports = () => {
     icons: [
       {
         src: path.resolve('src/images/logo.png'),
-        sizes: [96, 128, 192, 256, 384, 512],
+        sizes: [48, 96, 128, 192, 256, 384, 512],
         destination: path.join('assets', 'icons'),
       }
     ]
